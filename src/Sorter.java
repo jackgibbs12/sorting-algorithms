@@ -4,6 +4,7 @@ public class Sorter {
         InsertionSort insertionSort = new InsertionSort();
         SelectionSort selectionSort = new SelectionSort();
         int[] listToSort = {3,7,5,4,2,56,32,12};
-        insertionSort.sort(listToSort);
+        int[] sortedList = insertionSort.sort(listToSort);
+
     }
 }

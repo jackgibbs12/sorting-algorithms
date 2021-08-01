@@ -8,7 +8,7 @@ public class InsertionSort {
      * @param  listToSort  The unsorted list of integers to sort
      * @return n/a - to add soon
      */
-    public void sort(int[] listToSort){
+    public int[] sort(int[] listToSort){
 
         int element, position;
         for (int i = 1; i < listToSort.length; i++){
@@ -20,5 +20,6 @@ public class InsertionSort {
             }
             listToSort[position + 1] = element;
         }
+        return listToSort;
     }
 }

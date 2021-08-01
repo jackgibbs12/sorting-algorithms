@@ -7,7 +7,7 @@ public class SelectionSort {
      * @param  listToSort  The unsorted list of integers to sort
      * @return n/a - to add soon
      */
-    public void sort(int[] listToSort){
+    public int[] sort(int[] listToSort){
         int last = listToSort.length-1;
 
         int maxPos, temp;
@@ -20,6 +20,7 @@ public class SelectionSort {
             listToSort[last] = temp;
             last--;
         }
+        return listToSort;
     }
 
     public int findMax(int[] listToSort, int last){
