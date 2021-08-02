@@ -8,6 +8,16 @@ stable and has an average and worst time complexity of O(n^2), and best case O(n
     int[] listToSort = {3,7,5,4,2,56,32,12};
     int[] sortedList = bubblesort.sort(listToSort);
 
+## Counting Sort
+Counting sort works by counting how many times each number occurs in the sequence and storing
+this information in an auxiliary array. The sorting is achieved by mapping the occurrences 
+of the numbers in the array with the index in the auxiliary array. It has time complexity of 
+O(k+n) and is stable. 
+
+    CountingSort countingSort = new CountingSort();
+    int[] listToSort = {3,7,5,4,2,56,32,12};
+    int[] sortedList = countingSort.sort(listToSort);
+
 ## Insertion Sort
 Insertion sort splits the array into a sorted and unsorted section. Values
 from the unsorted section of the array are checked sequentially and placed
